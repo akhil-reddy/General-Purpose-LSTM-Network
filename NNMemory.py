@@ -5,7 +5,7 @@ import math
 
 def init(units,n_inputs,n_outputs,nn_hidden):
     nodes=[]
-    #Network between hidden layers of consecutive LSTM units
+    #Network between hidden layers of consecutive Memory units
     iu_network=[]
     self_network=[]
     for i in range(units):
@@ -27,7 +27,7 @@ def iterator(epochs):
     #Training phase
     inputs=[]
     outputs=[]
-    units=int(input("Enter the number of LSTM units required  "))
+    units=int(input("Enter the number of Memory units required  "))
     n_inputs=int(input("Enter the number of input nodes (>0 of course) "))
     n_outputs=int(input("Enter the number of output nodes (>0 of course) "))
     nn_hidden=int(input("Enter the memory required (number of hidden layer nodes) "))
